@@ -2,7 +2,7 @@
 
 The project is a shopping app.
 
-The api is: "https://fakestoreapi.com/products".
+The api is: "https://fakestoreapi.com".
 
 # Must Have:
 
