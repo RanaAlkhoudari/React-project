@@ -2,6 +2,8 @@
 
 The project is a shopping app.
 
+The api is: "https://fakestoreapi.com/products".
+
 # Must Have:
 
 The user is capable to see all the products(title, price, image).
