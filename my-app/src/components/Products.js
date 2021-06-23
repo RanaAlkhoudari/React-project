@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import useFetch from "../hooks/useFetch";
 import ShowItems from "./ShowItems";
-
-export const ProductsContext = React.createContext();
+import Loading from "./Loading";
 
 function Products() {
   const url = "https://fakestoreapi.com/products";
@@ -15,26 +14,7 @@ function Products() {
 
   return (
     <>
-      {isLoading && (
-        <div className="wrapper">
-          <div className="loadingio-spinner-spinner-gw5rx5q9wol">
-            <div className="ldio-nlqlwxaj9">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      )}
+        {isLoading && <Loading />}
       {isError && <p>Error</p>}
       {!isLoading && items.length === 0 && (
         <>

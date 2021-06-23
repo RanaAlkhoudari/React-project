@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ShowItems from "./ShowItems";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import Loading from "./Loading";
 
 function Limit() {
   const { value } = useParams();
@@ -15,26 +16,7 @@ function Limit() {
 
   return (
     <>
-      {isLoading && (
-        <div className="wrapper">
-          <div className="loadingio-spinner-spinner-gw5rx5q9wol">
-            <div className="ldio-nlqlwxaj9">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>
-        </div>
-      )}
+      {isLoading && <Loading />}
       {isError && <p>Error</p>}
       {!isLoading && items.length === 0 && (
         <div className="wrapper">
@@ -46,7 +28,7 @@ function Limit() {
       )}
       {value > 20 || value < 0 ? (
         <div className="wrapper">
-          <h1 className="main-title">Product Not Found</h1>
+          <h1 className="main-title">Products Not Found</h1>
         </div>
       ) : (
         !isLoading &&

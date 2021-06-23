@@ -30,15 +30,15 @@ function CartFavoriteProvider({ children }) {
   }
 
   function removeFromCart(el) {
-    let copy = [...cart];
-    copy = copy.filter((cartItem) => cartItem.id !== el.id);
-    setCart(copy);
+    const itemToRemove = cart.filter((cartItem) => cartItem.id !== el.id);
+    setCart(itemToRemove);
   }
 
   function removeFromFavorite(el) {
-    let copy = [...favorite];
-    copy = copy.filter((cartItem) => cartItem.id !== el.id);
-    setFavorite(copy);
+    const itemToRemove = favorite.filter(
+      (favoriteItem) => favoriteItem.id !== el.id
+    );
+    setFavorite(itemToRemove);
   }
 
   function addToFavorite(el) {

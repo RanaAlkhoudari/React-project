@@ -15,6 +15,7 @@ function SearchNumber() {
         name="quantity"
         min="1"
         max="20"
+        value={value}
         onChange={handleChange}
       />
       <Link to={`/limit/${value}`}>

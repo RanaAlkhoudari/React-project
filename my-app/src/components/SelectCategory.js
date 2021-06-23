@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 
 function SelectCategory() {
   const [value, setValue] = useState("");
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  };
+  const handleChange = (event) => setValue(event.target.value);
 
   return (
     <>
       <label htmlFor="category">Category: </label>
-      <select name="category" onChange={handleChange}>
+      <select name="category" value={value} onChange={handleChange}>
         <option value="men's clothing">Men's clothing</option>
         <option value="jewelery">Jewelry</option>
         <option value="electronics">Electronics</option>

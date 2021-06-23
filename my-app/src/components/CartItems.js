@@ -19,7 +19,7 @@ function CartItems() {
       {cart.length !== 0 && (
         <>
           <h1 className="main-title">Your Cart</h1>
-          <p className="main-title">Total: € {cartTotal}</p>
+          <p className="main-title">Total: € {cartTotal.toFixed(2)}</p>
         </>
       )}
       {cart.map((item) => {
