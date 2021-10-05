@@ -23,3 +23,5 @@ The user is capable to sort the products.
 The user is capable to delete products.
 
 The user is capable to limit the result of the products.
+
+![alt text](https://github.com/RanaAlkhoudari/React-project/blob/main/image.jpg?raw=true)
