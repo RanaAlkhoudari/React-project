@@ -25,3 +25,4 @@ The user is capable to delete products.
 The user is capable to limit the result of the products.
 
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/63319487/136198500-1de6ef3d-25c9-4d35-bc06-72084913f6b2.gif)
