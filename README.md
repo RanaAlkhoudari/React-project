@@ -1,4 +1,4 @@
-# React-project
+# React-shopping-app
 
 The project is a shopping app.
 
